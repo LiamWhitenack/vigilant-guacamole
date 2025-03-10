@@ -1,0 +1,22 @@
+[project]
+name = "vigilant-guacamole"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Liam Whitenack", email = "liamwhitenack@outlook.com" }
+]
+requires-python = ">=3.12"
+dependencies = []
+
+[project.scripts]
+vigilant-guacamole = "vigilant_guacamole:main"
+
+[tool.maturin]
+module-name = "vigilant_guacamole._core"
+python-packages = ["vigilant_guacamole"]
+python-source = "src"
+
+[build-system]
+requires = ["maturin>=1.0,<2.0"]
+build-backend = "maturin"
